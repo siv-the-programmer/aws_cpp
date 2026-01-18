@@ -105,7 +105,8 @@ Rapidly develop, test and launch software applications.
 
 ---
 
-Types of Cloud Computing.
+
+# Types of Cloud Computing.
 --
 
 <img src="aws_pics/pic3.png" width="400" alt="CCP_types1">
