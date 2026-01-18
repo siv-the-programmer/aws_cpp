@@ -1,6 +1,6 @@
 # aws_ccp
 
-<img src="pic6.png" width="400" alt="aws_pics/CCP_MAIN">
+<img src="aws_pics/pic6.png" width="400" alt="CCP_MAIN">
 
 This repository is a **living knowledge base** for the **AWS Certified Cloud Practitioner (CLF-C02)** certification and broader AWS cloud fundamentals.
 
