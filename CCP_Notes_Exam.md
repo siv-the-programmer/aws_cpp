@@ -82,7 +82,7 @@ This flexibility provides you with more time to experiment and innovate. When co
 
 The global footprint of the AWS Cloud enables you to deploy applications to customers around the world quickly, while providing them with low latency. This means that even if you are located in a different part of the world than your customers, customers are able to access your applications with minimal delays. 
 
-<img src="aws_pics/pic2.png" width="400" alt="CCP_MAIN">
+<img src="aws_pics/pic2.png" width="400" alt="CCP_problems_solved_by_the_cloud">
 
 
 # Flexibility: 
@@ -102,6 +102,10 @@ Build across data centers.
 
 # Agility: 
 Rapidly develop, test and launch software applications. 
+
+<img src="aws_pics/pic3.png" width="400" alt="CCP_types1">
+<img src="aws_pics/pic4.png" width="400" alt="CCP_types2">
+<img src="aws_pics/pic5.png" width="400" alt="CCP_types3">
 
 
 
