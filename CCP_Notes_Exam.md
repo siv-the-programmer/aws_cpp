@@ -103,6 +103,11 @@ Build across data centers.
 # Agility: 
 Rapidly develop, test and launch software applications. 
 
+---
+
+Types of Cloud Computing.
+--
+
 <img src="aws_pics/pic3.png" width="400" alt="CCP_types1">
 <img src="aws_pics/pic4.png" width="400" alt="CCP_types2">
 <img src="aws_pics/pic5.png" width="400" alt="CCP_types3">
