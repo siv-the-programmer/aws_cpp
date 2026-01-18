@@ -39,7 +39,8 @@ For example, suppose that a company wants to use cloud services that can automat
 
 
 # Benefits of cloud computing
-Consider why a company might choose to take a particular cloud computing approach when addressing business needs.
+
+• Consider why a company might choose to take a particular cloud computing approach when addressing business needs.
 
 
 # Trade upfront expense for variable expense
