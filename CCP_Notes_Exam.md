@@ -82,6 +82,7 @@ This flexibility provides you with more time to experiment and innovate. When co
 
 The global footprint of the AWS Cloud enables you to deploy applications to customers around the world quickly, while providing them with low latency. This means that even if you are located in a different part of the world than your customers, customers are able to access your applications with minimal delays. 
 
+<img src="aws_pics/pic2.png" width="400" alt="CCP_MAIN">
 
 
 # Flexibility: 
