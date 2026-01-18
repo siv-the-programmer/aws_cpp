@@ -86,25 +86,22 @@ The global footprint of the AWS Cloud enables you to deploy applications to cust
 
 
 # Flexibility: 
-Change resource types when needed.
+- Change resource types when needed.
 
 # Cost effectiveness:
-Pay as you go, for what you use.
+- Pay as you go, for what you use.
 
 # Scalability: 
-Accommodate larger loads by making hardware stronger and adding additional nodes.
+- Accommodate larger loads by making hardware stronger and adding additional nodes.
 
 # Elasticity: 
-Ability to scale out and scale in when needed.
+- Ability to scale out and scale in when needed.
 
 # High availability and fault tolerance: 
-Build across data centers.
+- Build across data centers.
 
 # Agility: 
-Rapidly develop, test and launch software applications. 
-
--
--
+- Rapidly develop, test and launch software applications. 
 
 
 
