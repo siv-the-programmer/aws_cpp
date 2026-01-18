@@ -7,6 +7,8 @@ On-demand delivery indicates that AWS has the resources you need, when you need 
 The three cloud computing deployment models are cloud-based, on-premises, and hybrid.
 ---
 
+<img src="aws_pics/pic1.jpeg" width="400" alt="CCP_MAIN">
+
 # Cloud-based deployment
 
 	• Run all parts of the application in the cloud.
