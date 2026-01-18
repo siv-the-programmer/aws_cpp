@@ -40,7 +40,7 @@ For example, suppose that a company wants to use cloud services that can automat
 
 # Benefits of cloud computing
 
-• Consider why a company might choose to take a particular cloud computing approach when addressing business needs.
+Consider why a company might choose to take a particular cloud computing approach when addressing business needs.
 
 
 # Trade upfront expense for variable expense
@@ -70,13 +70,13 @@ By using cloud computing, you can achieve a lower variable cost than you can get
  
 Because usage from hundreds of thousands of customers can aggregate in the cloud, providers, such as AWS, can achieve higher economies of scale. The economy of scale translates into lower pay-as-you-go prices. 
 
-Increase speed and agility
+@ Increase speed and agility
 
 The flexibility of cloud computing makes it easier for you to develop and deploy applications.
 
 This flexibility provides you with more time to experiment and innovate. When computing in data centers, it may take weeks to obtain new resources that you need. By comparison, cloud computing enables you to access new resources within minutes.
 
-Go global in minutes
+@ Go global in minutes
 
 The global footprint of the AWS Cloud enables you to deploy applications to customers around the world quickly, while providing them with low latency. This means that even if you are located in a different part of the world than your customers, customers are able to access your applications with minimal delays. 
 
