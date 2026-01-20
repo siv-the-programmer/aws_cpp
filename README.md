@@ -1,5 +1,15 @@
 # aws_ccp
 
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazonaws&logoColor=white)
+![AWS IAM](https://img.shields.io/badge/AWS-IAM-orange?logo=amazonaws&logoColor=white)
+![AWS S3](https://img.shields.io/badge/AWS-S3-orange?logo=amazons3&logoColor=white)
+![AWS EC2](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonec2&logoColor=white)
+![Boto3](https://img.shields.io/badge/Boto3-AWS%20SDK-yellow)
+![Automation](https://img.shields.io/badge/Focus-Automation-green)
+
+
+
+
 <img src="aws_pics/pic6.png" width="400" alt="CCP_MAIN">
 
 This repository is a **living knowledge base** for the **AWS Certified Cloud Practitioner (CLF-C02)** certification and broader AWS cloud fundamentals.
