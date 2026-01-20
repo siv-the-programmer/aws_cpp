@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Git auto uploader with file picker
-#-----------------------------------------
-# Created this file so that i dont manually have to git add add git commit git pull and git push
+# Updated the script to add all files 
+
+# Created to automate git add, commit, pull, and push
 
 # List all files in current directory (excluding .git)
 echo "Files in current directory:"
@@ -18,20 +18,10 @@ fi
 for i in "${!files[@]}"; do
   echo "$((i+1)). ${files[$i]}"
 done
+echo ".  -> Add all files"
 
-# Ask user to pick a file
-read -p "Select the file number you want to upload: " choice
-
-# Validate input
-if ! [[ "$choice" =~ ^[0-9]+$ ]] || (( choice < 1 || choice > ${#files[@]} )); then
-  echo "Invalid choice."
-  exit 1
-fi
-
-filename="${files[$((choice-1))]}"
-
-# Ask for commit message
-read -p "Enter commit message: " commit_msg
+# Ask user to pick a file or add all
+read -r -p "Select the file number you want to upload (or '.' for all files): " choice
 
 # Detect current branch automatically
 branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
@@ -40,11 +30,30 @@ if [[ -z "$branch" ]]; then
   exit 1
 fi
 
+# Ask for commit message
+read -r -p "Enter commit message: " commit_msg
+
 # Pull latest changes
 echo "Pulling latest changes from remote..."
 git pull origin "$branch"
-git add "$filename"
+
+# Stage files
+if [[ "$choice" == "." ]]; then
+  git add .
+  echo "All files staged."
+else
+  # Validate input
+  if ! [[ "$choice" =~ ^[0-9]+$ ]] || (( choice < 1 || choice > ${#files[@]} )); then
+    echo "Invalid choice."
+    exit 1
+  fi
+  filename="${files[$((choice-1))]}"
+  git add "$filename"
+  echo "Staged file: $filename"
+fi
+
+# Commit and push
 git commit -m "$commit_msg"
 git push origin "$branch"
 
-echo "'$filename' successfully committed and pushed to '$branch'!"
+echo "Changes successfully committed and pushed to '$branch'!"
