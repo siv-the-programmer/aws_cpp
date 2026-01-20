@@ -112,6 +112,188 @@ The global footprint of the AWS Cloud enables you to deploy applications to cust
 <img src="aws_pics/pic5.png" width="400" alt="CCP_types3">
 
 
+# Infrastructure as a Service (IaaS)
+
+Provide building blocks for cloud IT
+
+Provides networking, computers, data storage space
+
+Highest level of flexibility
+
+Easy parallel with traditional on-premises IT
+
+
+
+
+# Platform as a Service (PaaS)
+
+Removes the need for your organization to manage the underlying infrastructure
+
+Focus on the deployment and management of your applications
+
+
+
+
+# Software as a Service (SaaS)
+
+Completed product that is run and managed by the service provider
+
+
+
+
+# Cloud Responsibility Model
+# On-Premises
+
+Applications
+
+Data
+
+Runtime
+
+Middleware
+
+Operating System
+
+Virtualization
+
+Servers
+
+Storage
+
+Networking
+
+# (All managed by you)
+------------------------
+
+
+
+
+# Infrastructure as a Service (IaaS)
+
+Applications
+
+Data
+
+Runtime
+
+Middleware
+
+Operating System
+
+# (Managed by you)
+------------------------
+
+Virtualization
+
+Servers
+
+Storage
+
+Networking
+
+# (Managed by the cloud provider)
+----------------------------------
+
+
+
+
+# Platform as a Service (PaaS)
+
+Applications
+
+Data
+
+# (Managed by you)
+---------------------
+
+Runtime
+
+Middleware
+
+Operating System
+
+Virtualization
+
+Servers
+
+Storage
+
+Networking
+
+# (Managed by the cloud provider)
+--------------------------------
+
+
+
+
+# Software as a Service (SaaS)
+
+Applications
+
+Data
+
+Runtime
+
+Middleware
+
+Operating System
+
+Virtualization
+
+Servers
+
+Storage
+
+Networking
+
+# (All managed by the service provider)
+--------------------------------------
+
+
+
+# Example of Cloud Computing Types
+
+# Infrastructure as a Service (IaaS):
+
+Amazon EC2 (on AWS)
+
+GCP, Azure, Rackspace, DigitalOcean, Linode
+
+
+
+
+# Platform as a Service (PaaS):
+
+Elastic Beanstalk (on AWS)
+
+Heroku
+
+Google App Engine (GCP)
+
+Windows Azure (Microsoft)
+
+
+
+
+# Software as a Service (SaaS):
+
+Many AWS services (example: Rekognition for Machine Learning)
+
+Google Apps (Gmail)
+
+Dropbox
+
+Zoom
+
+
+
+
+# Note to self
+EC2 = IaaS → you manage the OS and above
+
+Elastic Beanstalk = PaaS → you deploy code, AWS handles servers
+
+Gmail / Zoom = SaaS → you just use the app
 
 
 
