@@ -140,6 +140,7 @@ Completed product that is run and managed by the service provider
 
 
 
+---
 
 # Cloud Responsibility Model
 # On-Premises
