@@ -29,3 +29,9 @@ This repository serves as:
 - A growing archive of cloud knowledge built incrementally
 
 The goal is simple: build solid cloud fundamentals first, then scale.
+
+---
+
+# Author:
+
+https://github.com/siv-the-programmer
