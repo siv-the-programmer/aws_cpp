@@ -14,7 +14,7 @@
 
 This repository is a **living knowledge base** for the **AWS Certified Cloud Practitioner (CLF-C02)** certification and broader AWS cloud fundamentals.
 
-# EVERYTHING CAN BE FOUND IN THE STUDY NOTES FOLDER
+# EVERYTHING CAN BE FOUND IN THE STUDY_NOTES FOLDER
 
 It documents my ongoing learning journey through:
 - Core cloud computing concepts
