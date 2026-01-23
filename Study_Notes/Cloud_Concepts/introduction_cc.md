@@ -7,7 +7,7 @@ On-demand delivery indicates that AWS has the resources you need, when you need 
 The three cloud computing deployment models are cloud-based, on-premises, and hybrid.
 ---
 
-<img src="aws_pics/pic1.jpg" width="400" alt="models">
+
 
 # Cloud-based deployment
 
@@ -32,8 +32,8 @@ For example, you might have applications that run on technology that is fully ke
 
 # Hybrid deployment
 
-	§ Connect cloud-based resources to on-premises infrastructure.
-	§ Integrate cloud-based resources with legacy IT applications.
+	Connect cloud-based resources to on-premises infrastructure.
+ Integrate cloud-based resources with legacy IT applications.
 	
 In a hybrid deployment, cloud-based resources are connected to on-premises infrastructure. You might want to use this approach in a number of situations. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.
 
@@ -82,8 +82,6 @@ This flexibility provides you with more time to experiment and innovate. When co
 
 The global footprint of the AWS Cloud enables you to deploy applications to customers around the world quickly, while providing them with low latency. This means that even if you are located in a different part of the world than your customers, customers are able to access your applications with minimal delays. 
 
-<img src="aws_pics/pic2.png" width="400" alt="CCP_problems_solved_by_the_cloud">
-
 
 # Flexibility: 
 - Change resource types when needed.
@@ -106,10 +104,6 @@ The global footprint of the AWS Cloud enables you to deploy applications to cust
 
 ---
 # Types of Cloud Computing: 
-
-<img src="aws_pics/pic3.png" width="400" alt="CCP_types1">
-<img src="aws_pics/pic4.png" width="400" alt="CCP_types2">
-<img src="aws_pics/pic5.png" width="400" alt="CCP_types3">
 
 
 # Infrastructure as a Service (IaaS)
