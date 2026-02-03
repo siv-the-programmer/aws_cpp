@@ -1,4 +1,4 @@
-EBS Snapshots are point-in-time backups of EBS volumes.
+# EBS Snapshots are point-in-time backups of EBS volumes.
 
 Snapshots are stored in Amazon S3, but not directly accessible as S3 objects.
 
@@ -39,5 +39,6 @@ Memory, CPU state, and running processes are NOT captured.
 Snapshots are not real-time replication
 
 Snapshots do not replace high availability
+
 
 Snapshots are not automatic unless configured
