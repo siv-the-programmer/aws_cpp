@@ -1,5 +1,5 @@
-Manual AMI creation is slow and error-prone.
-EC2 Image Builder exists to automate AMI creation and maintenance.
+# Manual AMI creation is slow and error-prone.
+# EC2 Image Builder exists to automate AMI creation and maintenance.
 
 # Image Builder automates:
 
@@ -41,4 +41,5 @@ Large fleets of EC2 instances
 
 # Exam logic:
 Manual AMI = possible
+
 Automated AMI lifecycle = Image Builder
