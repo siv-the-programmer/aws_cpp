@@ -1,4 +1,4 @@
-Instance Store is temporary storage physically attached to the EC2 host machine.
+# Instance Store is temporary storage physically attached to the EC2 host machine.
 
 # Key characteristics:
 
@@ -35,4 +35,5 @@ Backups
 Anything needing persistence
 
 # Exam rule:
+
 If the question says “data must survive restart”, Instance Store is wrong.
