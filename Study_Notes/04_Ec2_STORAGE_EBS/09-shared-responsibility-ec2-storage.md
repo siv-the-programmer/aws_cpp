@@ -1,4 +1,4 @@
-AWS Shared Responsibility Model applies to EC2 storage.
+# AWS Shared Responsibility Model applies to EC2 storage.
 
 # AWS is responsible for:
 
@@ -24,4 +24,5 @@ Snapshot and AMI management
 
 # Critical exam takeaway:
 AWS secures the cloud.
+
 You secure what’s in the cloud.
