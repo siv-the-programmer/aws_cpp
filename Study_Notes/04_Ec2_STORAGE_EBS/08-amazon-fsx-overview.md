@@ -1,4 +1,4 @@
-Amazon FSx provides fully managed file systems optimized for specific workloads.
+# Amazon FSx provides fully managed file systems optimized for specific workloads.
 
 # FSx variants:
 
@@ -21,4 +21,5 @@ High-performance computing
 Media processing
 
 # Exam hint:
+
 If the workload mentions Windows file systems, think FSx.
