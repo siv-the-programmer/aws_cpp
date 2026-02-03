@@ -1,4 +1,4 @@
-Amazon Elastic Block Store (EBS) is persistent block-level storage designed to be used with Amazon EC2 instances.
+# Amazon Elastic Block Store (EBS) is persistent block-level storage designed to be used with Amazon EC2 instances.
 Block storage means the data is stored in fixed-size chunks (blocks), similar to a traditional hard drive or SSD.
 
 # EBS is primarily used for:
@@ -47,5 +47,6 @@ If an EC2 instance needs a disk that survives stop/start, EBS is the default ans
 EBS is not regional
 
 EBS cannot be shared by default
+
 
 EBS is not free (storage + IOPS)
