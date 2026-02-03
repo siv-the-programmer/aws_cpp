@@ -1,4 +1,4 @@
-EBS Multi-Attach allows a single EBS volume to be attached to multiple EC2 instances simultaneously.
+# EBS Multi-Attach allows a single EBS volume to be attached to multiple EC2 instances simultaneously.
 
 This feature exists to support clustered applications that require shared block storage.
 
@@ -38,5 +38,6 @@ If AWS mentions “multiple EC2 instances access the same storage”:
 File-level → EFS
 
 Object-level → S3
+
 
 Block-level with cluster software → EBS Multi-Attach
