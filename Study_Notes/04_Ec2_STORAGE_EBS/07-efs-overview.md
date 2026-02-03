@@ -1,4 +1,4 @@
-Amazon Elastic File System (EFS) is managed shared file storage.
+# Amazon Elastic File System (EFS) is managed shared file storage.
 
 # EFS characteristics:
 
@@ -27,4 +27,5 @@ Content management systems
 Shared application data
 
 # Exam logic:
+
 Multiple EC2 instances need shared access → EFS.
