@@ -1,4 +1,4 @@
-An Amazon Machine Image (AMI) is a bootable template used to launch EC2 instances.
+# An Amazon Machine Image (AMI) is a bootable template used to launch EC2 instances.
 
 # An AMI includes:
 
@@ -45,4 +45,5 @@ AMI references snapshots
 New EC2 instances launched from AMI
 
 # Exam mindset:
+
 If the question mentions preconfigured EC2 instances, think AMI.
