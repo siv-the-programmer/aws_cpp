@@ -1,28 +1,34 @@
-# AWS Shared Responsibility Model applies to EC2 storage.
+# Shared Responsibility Model for EC2 Storage
 
-# AWS is responsible for:
+## Shared Responsibility Model Overview
+AWS uses a shared responsibility model that defines what AWS manages and what the customer manages.
 
-Physical data centers
+AWS Documentation:
+https://aws.amazon.com/compliance/shared-responsibility-model/
 
-Hardware
+---
 
-Underlying infrastructure
+## AWS Responsibilities
+Physical data centers  
+Hardware infrastructure  
+Storage durability  
+Service availability  
 
-Availability of services
+---
 
-# You are responsible for:
+## Customer Responsibilities
+Data protection  
+Backup strategy  
+Encryption configuration  
+IAM access control  
 
-Data protection
+---
 
-Backups
+## Exam Principle
+AWS secures the cloud.  
+You secure what is inside the cloud.
 
-Encryption configuration
+---
 
-Access permissions
-
-Snapshot and AMI management
-
-# Critical exam takeaway:
-AWS secures the cloud.
-
-You secure what’s in the cloud.
+## Summary
+Understanding the shared responsibility model is critical for designing secure and compliant EC2 storage solutions.

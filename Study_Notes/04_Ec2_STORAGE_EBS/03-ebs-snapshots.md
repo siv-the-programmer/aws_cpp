@@ -1,44 +1,64 @@
-# EBS Snapshots are point-in-time backups of EBS volumes.
+# EBS Snapshots
 
-Snapshots are stored in Amazon S3, but not directly accessible as S3 objects.
+## What Is an EBS Snapshot?
+An EBS snapshot is a point-in-time backup of an EBS volume.
 
-# Snapshot behavior:
+Snapshots are stored in Amazon S3 but are fully managed by AWS and are not directly accessible as S3 objects.
 
-First snapshot is full
+AWS Documentation:
+https://docs.aws.amazon.com/ebs/latest/userguide/ebs-snapshots.html
 
-All subsequent snapshots are incremental
+---
 
-Only changed blocks are saved
+## Why Snapshots Exist
+EBS volumes are scoped to a single Availability Zone. Snapshots allow data to be backed up, restored, and moved across Availability Zones and regions.
 
-Deleting a snapshot does not break others
+---
 
-What snapshots enable:
+## Snapshot Behavior
+The first snapshot is a full backup  
+Subsequent snapshots are incremental  
+Only changed blocks are stored  
 
-Disaster recovery
+Snapshots are independent after creation.
 
-Cross-region migration
+---
 
-Volume cloning
+## What Snapshots Capture
+Snapshots capture:
+- Disk data
+- File systems
+- Application data on disk
 
-AMI creation
+Snapshots do NOT capture:
+- Memory
+- CPU state
+- Running processes
 
-# Operational details:
+---
 
-Snapshots are regional
+## Regional Scope
+Snapshots are regional.  
+Volumes created from snapshots can be created in any Availability Zone within the region.
 
-Volumes created from snapshots can be in any AZ within the region
+Snapshots can also be copied across regions.
 
-Snapshots can be copied to other regions
+---
 
-Important clarification:
-Snapshots back up the volume, not the EC2 instance.
-Memory, CPU state, and running processes are NOT captured.
+## Common Use Cases
+Backup and recovery  
+Disaster recovery  
+AMI creation  
+Data migration  
 
-# Exam traps:
+---
 
-Snapshots are not real-time replication
+## Common Exam Confusion
+Snapshots are not automatic  
+Snapshots are not real-time replication  
+Snapshots do not replace high availability  
 
-Snapshots do not replace high availability
+---
 
-
-Snapshots are not automatic unless configured
+## Summary
+EBS snapshots are incremental, regional backups used for recovery, migration, and AMI creation.

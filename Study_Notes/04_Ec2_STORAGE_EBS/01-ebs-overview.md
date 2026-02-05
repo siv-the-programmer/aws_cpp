@@ -1,52 +1,71 @@
-# Amazon Elastic Block Store (EBS) is persistent block-level storage designed to be used with Amazon EC2 instances.
-Block storage means the data is stored in fixed-size chunks (blocks), similar to a traditional hard drive or SSD.
+# Amazon Elastic Block Store (EBS)
 
-# EBS is primarily used for:
+## What Is Amazon EBS?
+Amazon Elastic Block Store (EBS) is a managed block storage service designed to be used with Amazon EC2 instances. It provides persistent storage that behaves like a traditional hard drive or solid-state drive attached to a server.
 
-Operating system disks
+EBS is commonly used for operating systems, databases, and applications that require low-latency and consistent performance.
 
-Databases
+AWS Documentation:
+https://docs.aws.amazon.com/ebs/
 
-Application data requiring low latency
+---
 
-Stateful workloads
+## Why EBS Exists
+EC2 instances provide compute power, but compute alone is not enough for real workloads. Data must survive restarts, failures, and scaling events.
 
-# Core properties:
+EBS exists to separate:
+- Compute (EC2)
+- Storage (EBS)
 
-EBS volumes are attached to EC2 instances
+This separation allows storage to persist even when instances are stopped, replaced, or terminated.
 
-Each volume exists in one Availability Zone
+---
 
-Data persists independently of the EC2 instance lifecycle
+## What Block Storage Means
+Block storage stores data in fixed-size blocks. The operating system controls:
+- File systems
+- Disk formatting
+- Read and write operations
 
-Volumes can be detached and reattached to other instances in the same AZ
+This allows direct disk-level access, which is required by databases and operating systems.
 
-EBS vs other storage:
+EBS is different from:
+- Amazon S3 (object storage)
+- Amazon EFS (file storage)
 
-EBS ≠ S3 (object storage)
+---
 
-EBS ≠ EFS (shared file storage)
+## Core Characteristics
 
-EBS behaves like a disk, not a bucket or shared folder
+### Persistence
+EBS volumes are persistent by default. Data remains available after an EC2 instance is stopped or terminated unless the volume is explicitly configured to delete on termination.
 
-# Volume types and intent:
+### Availability Zone Scope
+Each EBS volume exists in a single Availability Zone. A volume can only be attached to EC2 instances in the same AZ.
 
-General Purpose SSD (gp3/gp2): default, balanced cost and performance
+### Attachment Model
+By default, one EBS volume can be attached to one EC2 instance at a time.
 
-Provisioned IOPS SSD (io2): mission-critical, predictable I/O
+### Durability
+AWS automatically replicates EBS data within the Availability Zone to protect against hardware failure.
 
-Throughput Optimized HDD (st1): large sequential workloads
+---
 
-Cold HDD (sc1): infrequently accessed data
+## Common Use Cases
+Operating system boot volumes  
+Databases  
+Application data  
+Stateful workloads  
 
-High-level design rule:
-If an EC2 instance needs a disk that survives stop/start, EBS is the default answer.
+---
 
-# Exam traps:
+## Common Exam Confusion
+EBS is not regional  
+EBS is not shared storage by default  
+EBS does not automatically back up data  
+EBS is not free  
 
-EBS is not regional
+---
 
-EBS cannot be shared by default
-
-
-EBS is not free (storage + IOPS)
+## Summary
+Amazon EBS is persistent block storage for EC2, scoped to a single Availability Zone and designed for stateful workloads.

@@ -1,43 +1,58 @@
-# EBS Multi-Attach allows a single EBS volume to be attached to multiple EC2 instances simultaneously.
+# EBS Multi-Attach
 
-This feature exists to support clustered applications that require shared block storage.
+## What Is EBS Multi-Attach?
+EBS Multi-Attach allows a single EBS volume to be attached to multiple EC2 instances at the same time.
 
-# Strict limitations:
+AWS Documentation:
+https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes-multi.html
 
-Only supported on io1 and io2 volumes
+---
 
-All attached instances must be in the same Availability Zone
+## Why Multi-Attach Exists
+Some enterprise and clustered applications require multiple servers to access the same block storage device simultaneously.
 
-Applications must coordinate writes (AWS does not handle locking)
+Multi-Attach exists to support these advanced use cases.
 
-What Multi-Attach does NOT do:
+---
 
-It does not provide file-level locking
+## Supported Volume Types
+Only supported on:
+io1  
+io2  
 
-It does not prevent corruption
+Other volume types do not support Multi-Attach.
 
-It does not behave like EFS
+---
 
-# Correct use cases:
+## Availability Zone Requirement
+All EC2 instances using Multi-Attach must be in the same Availability Zone as the EBS volume.
 
-Databases with cluster-aware file systems
+Cross-AZ attachment is not possible.
 
-Enterprise applications designed for shared block devices
+---
 
-Incorrect use cases:
+## Application Responsibility
+AWS does not manage:
+- File locking
+- Write coordination
+- Data consistency
 
-General file sharing
+Applications must be cluster-aware and capable of handling concurrent writes safely.
 
-Web servers sharing assets
+---
 
-Applications without write coordination
+## What Multi-Attach Is NOT
+Not shared file storage  
+Not safe for general workloads  
+Not a replacement for Amazon EFS  
 
-# Exam logic:
-If AWS mentions “multiple EC2 instances access the same storage”:
+---
 
-File-level → EFS
+## Exam Decision Rule
+Shared files across EC2 instances → Amazon EFS  
+Shared block storage with cluster software → EBS Multi-Attach  
 
-Object-level → S3
+---
 
-
-Block-level with cluster software → EBS Multi-Attach
+## Summary
+EBS Multi-Attach is a specialized feature for clustered workloads that require shared block-level access.

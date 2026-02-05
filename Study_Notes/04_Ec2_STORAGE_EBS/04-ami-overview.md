@@ -1,49 +1,52 @@
-# An Amazon Machine Image (AMI) is a bootable template used to launch EC2 instances.
+# Amazon Machine Images (AMI)
 
-# An AMI includes:
+## What Is an AMI?
+An Amazon Machine Image (AMI) is a template used to launch EC2 instances.
 
-Operating system
+An AMI defines:
+- Operating system
+- Installed software
+- Configuration
+- Storage layout
 
-Installed software
+AWS Documentation:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html
 
-Configuration settings
+---
 
-One or more EBS snapshots
+## Why AMIs Exist
+AMIs allow EC2 instances to be launched consistently and repeatedly with the same configuration.
 
-# AMIs enable:
+This enables:
+- Auto Scaling
+- Disaster recovery
+- Fast provisioning
 
-Rapid instance launches
+---
 
-Identical environments
+## AMI and EBS Relationship
+AMIs are built using EBS snapshots.
 
-Auto Scaling
+Flow:
+EBS volume → Snapshot → AMI → EC2 instance
 
-Disaster recovery
+---
 
-# ypes of AMIs:
+## Types of AMIs
+AWS-provided AMIs  
+Marketplace AMIs  
+Custom AMIs  
 
-AWS-provided (Amazon Linux, Ubuntu, Windows)
+---
 
-Marketplace AMIs
+## Exam Confusion
+AMI defines software  
+Instance type defines hardware  
+EBS defines storage  
 
-Custom AMIs
+These are separate components.
 
-# Key distinction:
+---
 
-Snapshot = disk backup
-
-AMI = launchable system template
-
-Lifecycle understanding:
-
-Create or modify EC2 instance
-
-Create AMI
-
-AMI references snapshots
-
-New EC2 instances launched from AMI
-
-# Exam mindset:
-
-If the question mentions preconfigured EC2 instances, think AMI.
+## Summary
+An AMI is a launchable template that defines the software and configuration of an EC2 instance.

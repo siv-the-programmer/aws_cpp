@@ -1,25 +1,34 @@
-# Amazon FSx provides fully managed file systems optimized for specific workloads.
+# Amazon FSx
 
-# FSx variants:
+## What Is Amazon FSx?
+Amazon FSx provides fully managed file systems optimized for specific workloads.
 
-FSx for Windows File Server
+AWS Documentation:
+https://docs.aws.amazon.com/fsx/
 
-FSx for Lustre
+---
 
-# Why FSx exists:
+## FSx Variants
+FSx for Windows File Server  
+FSx for Lustre  
 
-EFS is general-purpose
+---
 
-Some workloads need specialized performance or compatibility
+## Why FSx Exists
+Some workloads require:
+Windows compatibility  
+High-performance computing  
+Specialized file systems  
 
-# Use cases:
+---
 
-Windows applications
+## Common Use Cases
+Windows applications  
+Machine learning  
+Media processing  
+High-performance workloads  
 
-High-performance computing
+---
 
-Media processing
-
-# Exam hint:
-
-If the workload mentions Windows file systems, think FSx.
+## Summary
+Amazon FSx provides managed file systems tailored to specific workload requirements.

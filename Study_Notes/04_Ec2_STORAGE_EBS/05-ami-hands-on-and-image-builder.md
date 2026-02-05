@@ -1,45 +1,45 @@
-# Manual AMI creation is slow and error-prone.
-# EC2 Image Builder exists to automate AMI creation and maintenance.
+# AMI Creation and EC2 Image Builder
 
-# Image Builder automates:
+## Manual AMI Creation
+Manual AMI creation involves:
+Launching an EC2 instance  
+Configuring software  
+Creating an AMI from the instance  
 
-OS updates
+This approach does not scale well.
 
-Security patches
+---
 
-Software installation
+## What Is EC2 Image Builder?
+EC2 Image Builder automates the creation, maintenance, and updating of AMIs.
 
-Testing
+AWS Documentation:
+https://docs.aws.amazon.com/imagebuilder/
 
-AMI distribution
+---
 
-# Core components:
+## Why Image Builder Exists
+Manual AMI creation is error-prone and inconsistent. Image Builder ensures:
+Repeatability  
+Security patching  
+Automated testing  
 
-Image pipeline
+---
 
-Build components
+## Image Builder Components
+Image pipelines  
+Build components  
+Validation steps  
+Scheduled builds  
 
-Validation steps
+---
 
-Scheduling
+## When To Use Image Builder
+Regular AMI updates  
+Security-focused environments  
+Large EC2 fleets  
 
-# Why AWS built this:
+---
 
-Enterprises need consistent images
-
-Security compliance requires repeatability
-
-Manual processes do not scale
-
-When to use Image Builder:
-
-Regular AMI updates
-
-Security-focused environments
-
-Large fleets of EC2 instances
-
-# Exam logic:
-Manual AMI = possible
-
-Automated AMI lifecycle = Image Builder
+## Summary
+EC2 Image Builder automates AMI creation to ensure consistency, security, and scalability.
